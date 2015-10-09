@@ -1,7 +1,7 @@
-
+ 
 body {
-	background: url(images/wood.png);
-	background-size: 640px;
+	background: url(bigstock-White-Wood-Texture-Background-50738852-kopie.jpg);
+	background-size: 100%;
 	background-repeat: repeat;
 	margin: 0 auto;
 }
@@ -11,9 +11,9 @@ img {
 }
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
-	box-shadow: 0px 0px 9px 1px #969696;
+	/* box-shadow: 0px 0px 9px 1px #969696;*/
 }
 
 /************** LOGO ***************/
@@ -32,8 +32,14 @@ img {
 
 /************** MENU ***************/
 
+.bar-top {
+	border-bottom: 20px;
+	border-bottom-style: solid;
+	border-color: #A7A9AC;
+ 	
+}
 .main-nav {
- 	background-color: #58595B;
+ 	background-color: #393839;
  	overflow: auto;
 }
 
@@ -57,9 +63,9 @@ img {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', arial, sans-serif;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 15px;
 
 	}
 
@@ -68,7 +74,7 @@ img {
 
 	.content {
 		background-color: #FFF;
-		font-family: arial;
+		font-family: 'Roboto', arial, sans-serif;
 		font-size: 12px;
 		color: #58595B;
 	}
@@ -86,36 +92,36 @@ img {
 	/************** FOOTER ***************/
 
 	.bar-bottom {
-		background-color: #58595B;
-		height: 50px;
-		line-height: 50px;
+		background-color: #393839;
+		height: 80px;
+		border-top: 20px;
+		border-top-style: solid;
+		border-color: #A7A9AC;
 	}
 
 	.social {
-	
 	}
 
 	.connect {
+		padding: 0;
 		margin: 0;
 	
-
 	}
 
 	.connect li {
 		display: inline-block;
-		width: 20px;
-		height: 20px;
-		background-color: #58595B;
 		list-style-type: none;
-		text-align: center;
-		list-style: none: 
+		list-style: none;
+		margin-left: 10px;
+		margin-top: 10px;
 
 	}
 
-	.connect li a{
-		text-decoration: none;
-		color: #FFF;
+	.connect li img {
+		height:40px;
+
 	}
+
 
 		*, *:before, *:after {
 		-webkit-box-sizing: border-box;
