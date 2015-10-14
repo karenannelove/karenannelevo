@@ -3,7 +3,7 @@ body {
 	background: url(bigstock-White-Wood-Texture-Background-50738852-kopie.jpg);
 	background-size: 100%;
 	background-repeat: repeat;
-	margin: 0 auto;
+	margin: 0;
 }
 
 img {
@@ -13,7 +13,7 @@ img {
 .container {
 	width: 90%;
 	margin: 0 auto;
-	/* box-shadow: 0px 0px 9px 1px #969696;*/
+	height: 100%;
 }
 
 /************** LOGO ***************/
@@ -36,6 +36,8 @@ img {
 	border-bottom: 20px;
 	border-bottom-style: solid;
 	border-color: #A7A9AC;
+	position: fixed; 
+	width: 90%;
  	
 }
 .main-nav {
@@ -65,7 +67,7 @@ img {
 	color: #FFF;
 	font-family: 'Roboto', arial, sans-serif;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 17px;
 
 	}
 
@@ -75,12 +77,32 @@ img {
 	.content {
 		background-color: #FFF;
 		font-family: 'Roboto', arial, sans-serif;
-		font-size: 12px;
+		font-size: 18px;
+		font-weight: 300; 
 		color: #58595B;
+		padding: 3%;
+	}
+
+	h1 {
+		font-family: 'Roboto', arial, sans-serif;
+		font-weight: 400; 
+		font-size: 30px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	/************** WELCOME ***************/
+
+	.welcome {
+		padding-top: 97px;
 	}
 
 	.about {
-		padding: 20px;
 		overflow: auto;
 	}
 
@@ -89,22 +111,52 @@ img {
 		width: 20%;
 	}
 
+	/************** SERVICES ***************/
+
+	.services {
+		padding-top: 60px;
+	}
+	.services article {
+		width: 32.33333%;
+		display: inline-block;
+		padding-left: 3%;
+		font-size: 14px;
+	}
+
+	.services article h2 {
+		text-align: center;
+	}
+
+	.services article img {
+		width: 100%;
+		padding: 0 3%;
+	}
+
 	/************** FOOTER ***************/
 
 	.bar-bottom {
 		background-color: #393839;
-		height: 80px;
 		border-top: 20px;
 		border-top-style: solid;
 		border-color: #A7A9AC;
+		overflow: auto;
 	}
 
-	.social {
+
+	.bar-bottom p {
+		float: right;
+		font-family: 'Roboto', arial, sans-serif;
+		font-size: 12px;
+		color: #A7A9AC;
+		margin: 0;
+		line-height: 80px;
+		padding-right: 15px;
 	}
 
 	.connect {
 		padding: 0;
 		margin: 0;
+		float: left;
 	
 	}
 
@@ -112,13 +164,15 @@ img {
 		display: inline-block;
 		list-style-type: none;
 		list-style: none;
-		margin-left: 10px;
-		margin-top: 10px;
+		padding-left: 10px;
+		padding-top: 20px;
+
 
 	}
 
 	.connect li img {
 		height:40px;
+		margin: 0;
 
 	}
 
