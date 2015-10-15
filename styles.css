@@ -132,6 +132,32 @@ img {
 		padding: 0 3%;
 	}
 
+
+	/************** WORK ***************/
+
+	.work {
+		padding-top: 60px;
+	}
+
+	.work ul{
+		padding-left: 2%;
+	}
+
+	.work ul li {
+		display: inline-block;
+		width: 23.5%;
+	}
+
+	.work ul li img {
+		padding: 2%;
+
+	}
+
+
+
+
+
+
 	/************** FOOTER ***************/
 
 	.bar-bottom {
