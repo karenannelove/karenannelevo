@@ -16,20 +16,20 @@
 				 		<div class="logo"><img src="images/logo.png" alt="Karen Levo"></div>
 				 		<div class="main-menu">
 				 			<ul class="menu">
-				 				<li><a href="index.html" title="About">about</a></li>
-				 				<li><a href="index.html" title="Services">services</a></li> 	
-				 				<li><a href="index.html" title="Work">work</a></li>
-				 				<li><a href="index.html" title="Contact">contact</a></li>
+				 				<li><a href="#aboutlink">about</a></li>
+				 				<li><a href="#serviceslink" title="Services">services</a></li> 	
+				 				<li><a href="#worklink" title="Work">work</a></li>
+				 				<li><a href="#contactlink.html" title="Contact">contact</a></li>
 				 			</ul>
 				 		</div>
 				 	</nav>
 			 	</header>
 
 			 	<main class="content">
-
+			 		<a name="aboutlink"></a>
 				 	<section class="welcome">
-					 	<article class="about">
-
+					 	<article class="about" >
+					 	
 					 		<h1>Hello, and thank you for visiting my website!</h1>
 							<img src="images/karen.png" class="karen">
 
@@ -37,8 +37,8 @@
 							
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a name="serviceslink"></a>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
 						</article>
 					</section>
 
@@ -56,14 +56,19 @@
 						<article>
 							<img src="images/services.png">
 							<h2>Heading</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-						</article>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <a name="worklink">aliqua.  </p>
+						</a></article>
 					</section>
 
 					<section class="work">
+						<nav>
+							<ul class="second_menu">
+								<li><a href="#design">design</a></li>
+								<li><a href="#art">art</a></li>
+							</ul>
+						</nav>
 						<article class="design">
-							<h2>Design</h2>
-								<ul>
+								<ul class="port">
 								<li><img src="images/work.png"></li>
 								<li><img src="images/work.png"></li>
 								<li><img src="images/work.png"></li>
@@ -76,7 +81,7 @@
 						</article>
 						<article class ="art">
 							<h2>Art</h2>
-							<ul>
+							<ul class ="port">
 								<li><img src="images/work.png"></li>
 								<li><img src="images/work.png"></li>
 								<li><img src="images/work.png"></li>
@@ -87,6 +92,19 @@
 								<li><img src="images/work.png"></li>
 							</ul>
 						</article>
+					</section>
+
+					<section class="contact">
+						<article class="contactforms">
+							<h2>Contact</h2>
+		                        <form class="form-contact">
+		                            <input type="text" name="yourname" placeholder="name to be displayed">
+		                            <textarea name="comment" placeholder="your message"></textarea>
+		                            <input type="text" name="email" placeholder="email (will not be displayed)">
+		                            <button type="send">send</button>
+		                        </form>
+						</article>
+
 					</section>
 				</main>
 
@@ -99,8 +117,22 @@
  	 		
  	 		</div>
 
+<!-- // script // -->
+<!-- // font links // -->
  	 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			
 			<script src="js/main.js"></script>
+
+<!-- // scroll links // -->
+			<script src="js/jquery_localScroll-master/jquery_localScroll.js" type="text/javascript"></script> 
+			<script src="js/jquery_scrollTo/jquery_scrollTo.js" type="text/javascript"></script> 
+
+			<script type="text/javascript">
+			$(document).ready(function() {
+   			$('.menu').localScroll({duration:800});
+			});
+			</script>
+
+<!-- // script // -->
 	</body>
 </html>

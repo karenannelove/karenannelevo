@@ -47,7 +47,7 @@ img {
 
 .main-menu {
 	margin-top: 30px;
-		float: right;
+	float: right;
 }
 
 .menu {
@@ -141,15 +141,34 @@ img {
 
 	/************** WORK ***************/
 
+	.second_menu li {
+		display: inline-block;
+	}
+
+	.second_menu li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #393839;
+			font-family: 'Roboto', arial, sans-serif;
+			font-weight: 500;
+			font-size: 20px;
+			margin-right: 7%;
+	}
+
+		.second_menu li a:hover {
+	    color: #FFD94E;
+		}
+
 	.work {
 		padding-top: 60px;
+		overflow: auto;
 	}
 
 	.work ul{
 		padding-left: 2%;
 	}
 
-	.work ul li {
+	.port li {
 		display: inline-block;
 		width: 23.5%;
 	}
@@ -158,11 +177,6 @@ img {
 		padding: 2%;
 
 	}
-
-
-
-
-
 
 	/************** FOOTER ***************/
 
