@@ -7,7 +7,6 @@ body {
 
 .container {
 	width: 100%;
-	margin: 0 auto;
 	height: 100%;
 }
 
@@ -15,9 +14,9 @@ body {
 
 .logo {
 	float: left;
-	margin-left: 15px;
+	margin-left: 8px;
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 6px;
 }
 
 .logo > img {
@@ -28,7 +27,7 @@ body {
 /************** MENU ***************/
 
 .bar-top {
-	border-bottom: 20px;
+	border-bottom: 6px;
 	border-bottom-style: solid;
 	border-color: #A7A9AC;
 	position: fixed; 
@@ -43,7 +42,8 @@ body {
 
 .main-menu {
 	margin-top: 0px;
-	margin-left: 15px;
+	margin-left: 6px;
+	margin-bottom: 8px;
 	float: left;
 }
 
@@ -64,7 +64,7 @@ body {
 	color: #FFF;
 	font-family: 'Roboto', arial, sans-serif;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 15px;
 
 	}
 
@@ -89,7 +89,7 @@ body {
 	h1 {
 		font-family: 'Roboto', arial, sans-serif;
 		font-weight: 400; 
-		font-size: 30px;
+		font-size: 25px;
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
@@ -110,8 +110,7 @@ body {
 	}
 
 	.about > img {
-		float: right;
-		width: 20%;
+		width: 100%;
 	}
 
 	/************** SERVICES ***************/
@@ -120,10 +119,12 @@ body {
 		padding-top: 60px;
 	}
 	.services article {
-		width: 32.33333%;
-		display: inline-block;
-		padding-left: 3%;
-		font-size: 14px;
+		width: 80%;
+		display: block;
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
 	}
 
 	.services article h2 {
@@ -162,18 +163,15 @@ body {
 	}
 
 	.work ul{
-		padding-left: 2%;
+		padding-left: 0%;
 	}
 
-	.port li {
-		display: inline-block;
-		width: 23.5%;
+	.port li img{
+		display: block;
+		width: 100%;
 	}
 
-	.work ul li img {
-		padding: 2%;
 
-	}
 
 	/************** FOOTER ***************/
 
@@ -225,13 +223,63 @@ body {
 
 @media (min-width: 457px) {
 
+	.container {
+			margin: 0 auto;
+	}
+
+	.bar-top {
+			border-bottom: 20px;
+			border-bottom-style: solid;
+			border-color: #A7A9AC;
+			position: fixed; 
+			width: 100%;
+	 	
+		}
+
 	.main-menu {
 		margin-top: 30px;
 		margin-left: 15px;
 		float: right;
 	}
+	
 
-}	
+	.logo {
+		float: left;
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	h1 {
+		font-family: 'Roboto', arial, sans-serif;
+		font-weight: 400; 
+		font-size: 30px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.about > img {
+		float: right;
+		width: 40%;
+		max-width: 200px;
+	}
+
+	.services article {
+		width: 32.33333%;
+		display: inline-block;
+		padding-left: 3%;
+		font-size: 14px;
+	}
+
+	.port li {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.port li img {
+		max-width: 300px;
+
+}
 
 /******************* 600PX *******************/
 /*___________________________________________*/
