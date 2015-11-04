@@ -20,7 +20,7 @@ body {
 }
 
 .logo > img {
-	height: 43px;
+	height: 30px;
 	line-height: 55px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .main-menu {
 	margin-top: 0px;
-	margin-left: 6px;
+	margin-left: 10px;
 	margin-bottom: 8px;
 	float: left;
 }
@@ -111,6 +111,7 @@ body {
 
 	.about > img {
 		width: 100%;
+		display: none;
 	}
 
 	/************** SERVICES ***************/
@@ -141,6 +142,7 @@ body {
 
 	.second_menu {
 		margin-bottom: 10px;
+		padding-left: 0;
 	}
 	.second_menu li {
 		display: inline-block;
@@ -165,21 +167,23 @@ body {
 		overflow: auto;
 	}
 
-	.work ul{
-		padding-left: 0%;
-	}
-
 	.port {
 		overflow: auto;
 	}
 
-	.design {
+	.thumbs {
 		overflow: auto;
 	}
 
-	.design img {
-		width: 100%;
+	.thumbs img {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		margin top: 0;
+		margin-bottom: 0;
 	}
+
+	
 
 	/************** FOOTER ***************/
 
@@ -226,10 +230,10 @@ body {
 	}
 
 
-/******************* 457PX *******************/
+/******************* 502PX *******************/
 /*___________________________________________*/	
 
-@media (min-width: 457px) {
+@media (min-width: 502px) {
 
 	.container {
 			margin: 0 auto;
@@ -245,9 +249,7 @@ body {
 		}
 
 	.main-menu {
-		margin-top: 30px;
 		margin-left: 15px;
-		float: right;
 	}
 	
 
@@ -257,6 +259,7 @@ body {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+
 
 	h1 {
 		font-family: 'Roboto', arial, sans-serif;
@@ -270,6 +273,7 @@ body {
 		float: right;
 		width: 40%;
 		max-width: 200px;
+		display: inline-block;
 	}
 
 	.services article {
@@ -289,10 +293,21 @@ body {
 
 }
 
-/******************* 600PX *******************/
+/******************* 514PX *******************/
 /*___________________________________________*/
 
-@media (min-width: 600px) {
+@media (min-width: 514px) {
+
+	.main-menu {
+			margin-top: 30px;
+			float: right;
+		}
+
+}
+/******************* 628PX *******************/
+/*___________________________________________*/
+
+@media (min-width: 628px) {
 
 		body {
 			background: url(bigstock-White-Wood-Texture-Background-50738852-kopie.jpg);
@@ -336,6 +351,18 @@ body {
 			font-size: 17px;
 
 		}
+}
+
+/******************* 715PX *******************/
+/*___________________________________________*/
+
+@media (min-width: 715px) {
+
+		.logo > img {
+			height: 43px;
+			line-height: 55px;
+		}
+
 }
 
 /***********************************************/
