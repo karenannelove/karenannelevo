@@ -12,7 +12,7 @@ $(document).ready(function() {
    
 	$("[title=Services]").on('click', function(event){
 		event.preventDefault();
-		$(window).scrollTo('.services',1000,{offset:-70});
+		$(window).scrollTo('.services',1000,{offset:-96});
    	});
 
    	$("[title=Work]").on('click', function(event){
@@ -50,5 +50,9 @@ $(document).ready(function() {
    		$('.design').removeClass('is-hidden');
    		
    	 });
+
+// SwipeBox Gallery 
+
+   	$( '.swipebox' ).swipebox();
 
 });

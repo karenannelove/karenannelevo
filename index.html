@@ -5,7 +5,10 @@
 		<meta charset="utf-8">
 		
 		<link rel="stylesheet" href="styles.css">
+
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="vendor/swipebox-master/src/css/swipebox.css">
 	</head>
 	
 	<body>
@@ -13,7 +16,7 @@
 
 				<header class="bar-top">
 				 	<nav class="main-nav">
-				 		<div class="logo"><a href="#"><img src="images/logo_.png" alt="Karen Levo"></a></div>
+				 		<div class="logo"><a href="index.html"><img src="images/logo_.png" alt="Karen Levo"></a></div>
 				 		<div class="main-menu">
 				 			<ul class="menu">
 				 				<li><a href="#" title="About">about</a></li>
@@ -74,14 +77,25 @@
 						<article class="port">
 
 							<ul class="thumbs">
-								<li><a href="images/portfolio/design_a.png"><img class="design" src="images/portfolio/des_thumb_a.png"></a></li>
-								<li><a href="images/portfolio/design_b.png"><img class="design"src="images/portfolio/des_thumb_b.png"></a></li>
-								<li><a href="images/portfolio/design_c.png"><img class="design"src="images/portfolio/des_thumb_c.png"></a></li>
-								<li><a href="images/portfolio/design_d.png"><img class="design"src="images/portfolio/des_thumb_d.png"></a></li>
-								<li><a href="images/portfolio/art_a.png"><img class="art"src="images/portfolio/art_thumb_a.png"></a></li>
-								<li><a href="images/portfolio/art_b.png"><img class="art"src="images/portfolio/art_thumb_b.png"></a></li>
-								<li><a href="images/portfolio/art_c.png"><img class="art"src="images/portfolio/art_thumb_c.png"></a></li>
-								<li><a href="images/portfolio/art_d.png"><img class="art"src="images/portfolio/art_thumb_d.png"></a></li>
+								<li><a href="images/portfolio/design_a.png" class="swipebox" title="My Caption"><img class="design" src="images/portfolio/des_thumb_a.png" onmouseover="this.src=' images/portfolio/des_thumb_a_.png'" onmouseout="this.src='images/portfolio/des_thumb_a.png'"></a></li>
+
+								<li><a href="images/portfolio/design_b.png" class="swipebox" title="My Caption"><img class="design"src="images/portfolio/des_thumb_b.png"onmouseover="this.src=' images/portfolio/des_thumb_b_.png'" onmouseout="this.src='images/portfolio/des_thumb_b.png'"></a></li>
+
+								<li><a href="images/portfolio/design_c.png" class="swipebox" title="My Caption"><img class="design"src="images/portfolio/des_thumb_c.png"onmouseover="this.src=' images/portfolio/des_thumb_c_.png'" onmouseout="this.src='images/portfolio/des_thumb_c.png'"></a></li>
+
+								<li><a href="images/portfolio/design_d.png" class="swipebox" title="My Caption"><img class="design"src="images/portfolio/des_thumb_d.png" onmouseover="this.src=' images/portfolio/des_thumb_d_.png'" onmouseout="this.src='images/portfolio/des_thumb_d.png'"></a></li>
+
+								<li><a href="images/portfolio/design_e.png" class="swipebox"title="My Caption"><img class="design"src="images/portfolio/des_thumb_e.png" onmouseover="this.src=' images/portfolio/des_thumb_e_.png'" onmouseout="this.src='images/portfolio/des_thumb_e.png'"></a></li>
+
+								<li><a href="images/portfolio/art_a.png" class="swipebox" title="My Caption"><img class="art"src="images/portfolio/art_thumb_a.png" onmouseover="this.src=' images/portfolio/art_thumb_a_.png'" onmouseout="this.src='images/portfolio/art_thumb_a.png'"></a></li>
+
+								<li><a href="images/portfolio/art_b.png" class="swipebox" title="My Caption"><img class="art"src="images/portfolio/art_thumb_b.png"onmouseover="this.src=' images/portfolio/art_thumb_b_.png'" onmouseout="this.src='images/portfolio/art_thumb_b.png'"></a></li>
+
+								<li><a href="images/portfolio/art_c.png" class="swipebox" title="My Caption"><img class="art"src="images/portfolio/art_thumb_c.png" onmouseover="this.src=' images/portfolio/art_thumb_c_.png'" onmouseout="this.src='images/portfolio/art_thumb_c.png'"></a></li>
+
+								<li><a href="images/portfolio/art_d.png" class="swipebox" title="My Caption"><img class="art"src="images/portfolio/art_thumb_d.png"onmouseover="this.src=' images/portfolio/art_thumb_d_.png'" onmouseout="this.src='images/portfolio/art_thumb_d.png'"></a></li>
+
+								<li><a href="images/portfolio/art_e.png" class="swipebox" title="My Caption"><img class="art"src="images/portfolio/art_thumb_e.png"onmouseover="this.src=' images/portfolio/art_thumb_e_.png'" onmouseout="this.src='images/portfolio/art_thumb_e.png'"></a></li>
 							</ul>
 						
 								
@@ -113,21 +127,23 @@
 <!-- // script // -->
 <!-- // font links // -->
  	 		
- 	 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- // my js link // -->	
 			
-			<script src="js/main.js" type="text/javascript"></script> 
+		<script src="js/main.js" type="text/javascript"></script> 
 
 <!-- // scroll links // -->
 			
-			<script src="vendor/jquery_localScroll-master/jquery_localScroll.js" type="text/javascript"></script> 
+		<script src="vendor/jquery_localScroll-master/jquery_localScroll.js" type="text/javascript"></script> 
 
-			<script src="vendor/jquery_scrollTo/jquery_scrollTo.js" type="text/javascript"></script> 
+		<script src="vendor/jquery_scrollTo/jquery_scrollTo.js" type="text/javascript"></script> 
 
 
-<!-- // filter on portfolio nav // -->
+<!-- // Lightbox // -->
 
+		
+		<script src="vendor/swipebox-master/src/js/jquery.swipebox.js"></script>
 	
 
 <!-- // script // -->

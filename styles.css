@@ -175,15 +175,13 @@ body {
 	}
 
 	.thumbs li {
-		display: inline-block;
-		float: left;
-		width: 25%;
-		margin: 0;
+		display:block;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.thumbs li img {
 		width: 100%;
-		float: left;
 	}
 
 	.is-shown {
@@ -239,7 +237,6 @@ body {
 		margin: 0;
 
 	}
-
 
 /******************* 502PX *******************/
 /*___________________________________________*/	
@@ -306,6 +303,18 @@ body {
 			float: right;
 		}
 
+	.thumbs li {
+		display: inline-block;
+		float: left;
+		width: 33.3333333333%;
+		margin: 0;
+	}
+
+	.thumbs li img {
+		width: 100%;
+		float: left;
+	}
+
 }
 /******************* 628PX *******************/
 /*___________________________________________*/
@@ -366,6 +375,18 @@ body {
 			line-height: 55px;
 		}
 
+
+		.thumbs li {
+			display: inline-block;
+			float: left;
+			width: 20%;
+			margin: 0;
+	}
+
+		.thumbs li img {
+			width: 100%;
+			float: left;
+	}
 }
 
 /***********************************************/
