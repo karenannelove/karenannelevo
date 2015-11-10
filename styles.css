@@ -87,6 +87,7 @@ body {
 	}
 
 	h1 {
+		color: #393839;
 		font-family: 'Roboto', arial, sans-serif;
 		font-weight: 400; 
 		font-size: 25px;
@@ -119,6 +120,8 @@ body {
 	.services {
 		padding-top: 60px;
 	}
+
+
 	.services article {
 		width: 80%;
 		display: block;
@@ -130,6 +133,8 @@ body {
 
 	.services article h2 {
 		text-align: center;
+		font-size: 25px;
+		color: #393839;
 	}
 
 	.services article img {
@@ -192,6 +197,48 @@ body {
 		display: none;
 	}
 
+
+
+	/************** CONTACT ***************/
+
+	.contact {
+		padding-top: 60px;
+		overflow: auto;
+		min-height: 400px;
+	}
+
+	.contact h2 {
+		font-size: 25px;
+		color: #393839;
+	}
+
+
+	.contact_info p {
+		padding-left: 10px;
+
+	}
+
+	.contact_info p a{
+			text-decoration: none;
+			color: #A7A9AC;
+			font-family: 'Roboto', arial, sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			width: 50%;
+
+	}
+
+	.contact img{
+		display: block;
+		width: 80%;
+		padding-left: 50px;
+		padding-bottom: 50px;
+
+	}
+
+	.contact_info p a:hover {
+	    color: #FFD94E;
+		}
 	
 
 	/************** FOOTER ***************/
@@ -279,8 +326,8 @@ body {
 
 	.about > img {
 		float: right;
-		width: 50%;
-		max-width: 300px;
+		width: 30%;
+		max-width: 290px;
 		display: inline-block;
 	}
 
@@ -388,9 +435,69 @@ body {
 			width: 100%;
 			float: left;
 	}
+
+	.contact_info p {
+		padding-left: 50px;
+
+	}
+
+
+	.contact_info{
+		float: left;
+		height: 400px;
+		width: 50%;
+
+	}
+
+	.contact img{
+		display: inline-block;
+		float: left;
+		width: 40%;
+		max-width: 400px;
+
+	}
 }
 
-/******************* 1000PX *******************/
+/******************* 1100PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 1100px) {
+
+	.about h1{
+		font-size: 50px;
+	}
+
+	h2{
+		font-size: 30px;
+	}
+
+	.menu li a {
+	font-size: 20px;
+	}
+
+	.about p{
+		font-size: 20px;
+	}
+
+	.services article {
+		font-size: 16px;
+	}
+
+	.connect li img {
+		height:50px;
+		margin-bottom: 20px;
+
+	}
+
+	.second_menu li a {
+			font-size: 25px;
+
+	}
+
+}
+
+
+/******************* 1400PX *******************/
 /*___________________________________________*/	
 
 @media (min-width: 1400px) {
@@ -408,7 +515,7 @@ body {
 		}
 
 		.container {
-			width: 70%;
+			width: 80%;
 			margin: 0 auto;
 			height: 100%;
 
@@ -420,7 +527,7 @@ body {
 			border-bottom-style: solid;
 			border-color: #A7A9AC;
 			position: fixed; 
-			width: 70%;
+			width: 80%;
 	 	
 		}
 
