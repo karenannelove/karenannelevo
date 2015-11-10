@@ -279,8 +279,8 @@ body {
 
 	.about > img {
 		float: right;
-		width: 40%;
-		max-width: 200px;
+		width: 50%;
+		max-width: 300px;
 		display: inline-block;
 	}
 
@@ -336,6 +336,7 @@ body {
 			width: 90%;
 			margin: 0 auto;
 			height: 100%;
+
 		}
 
 
@@ -387,6 +388,42 @@ body {
 			width: 100%;
 			float: left;
 	}
+}
+
+/******************* 1000PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 1400px) {
+
+
+		body {
+			background: url(bigstock-White-Wood-Texture-Background-50738852-kopie.jpg);
+			background-size: 100%;
+			background-repeat: repeat;
+			margin: 0;
+		}
+
+		img {
+			max-width:100%;
+		}
+
+		.container {
+			width: 70%;
+			margin: 0 auto;
+			height: 100%;
+
+		}
+
+
+		.bar-top {
+			border-bottom: 20px;
+			border-bottom-style: solid;
+			border-color: #A7A9AC;
+			position: fixed; 
+			width: 70%;
+	 	
+		}
+
 }
 
 /***********************************************/
