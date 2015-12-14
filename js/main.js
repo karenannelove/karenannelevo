@@ -1,6 +1,9 @@
 
 $(document).ready(function() {
-   
+
+    // Initialize the Filter State
+    var filterState = 'all';
+
    	// $('.menu').localScroll({duration:800});
 
    	// Linking nav to sections for animated scrolling
@@ -9,7 +12,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(window).scrollTo('.about',1000,{offset:-97});
    	});
-   
+
 	$("[title=Services]").on('click', function(event){
 		event.preventDefault();
 		$(window).scrollTo('.services',1000,{offset:-96});
@@ -32,6 +35,9 @@ $(document).ready(function() {
    		$('.design').addClass('is-shown');
    		$('.design').removeClass('is-hidden');
    		$('.art').addClass('is-hidden');
+
+      // Reassign Filter State to Design (on click of design filter btn)
+      filterState = 'design';
    	 });
 
    	 $('#btn-art').on("click", function(event){
@@ -39,7 +45,9 @@ $(document).ready(function() {
    		$('.art').addClass('is-shown');
    		$('.art').removeClass('is-hidden');
    		$('.design').addClass('is-hidden');
-   		
+
+      // Reassign Filter State to Art (on click of art filter btn)
+      filterState = 'art';
    	 });
 
    	 $('#btn-all').on("click", function(event){
@@ -48,11 +56,62 @@ $(document).ready(function() {
    		$('.design').addClass('is-shown');
    		$('.art').removeClass('is-hidden');
    		$('.design').removeClass('is-hidden');
-   		
+
+      // Reassign Filter State to All (on click of all filter btn)
+      filterState = 'all';
    	 });
 
-// SwipeBox Gallery 
+// SwipeBox Gallery
 
-   	$( '.swipebox' ).swipebox();
+  // Removed swipebox plugin call on load
+  // 	$( '.swipebox' ).swipebox();
+
+
+    // Arrays that store the list of images we'll load on click of an image
+    var designCollection = [
+      { href:'images/portfolio/design_a.png', title:'My Caption A' },
+      { href:'images/portfolio/design_b.png', title:'My Second Caption' }
+    ];
+
+    var artCollection = [
+      { href:'images/portfolio/art_a.png', title:'My Caption Arrrrrtt' },
+      { href:'images/portfolio/art_b.png', title:'My Second arttt Caption' }
+    ];
+
+    var allCollection = [
+      { href:'images/portfolio/design_a.png', title:'My Caption A' },
+      { href:'images/portfolio/design_b.png', title:'My Second Caption' },
+      { href:'images/portfolio/art_a.png', title:'My Caption Arrrrrtt' },
+      { href:'images/portfolio/art_b.png', title:'My Second arttt Caption' }
+    ];
+
+
+    // On click of an image, we'll dynamically set the swipebox gallery
+    $( '.thumbs > li img' ).on('click', function( e ) {
+    	e.preventDefault();
+
+      if (filterState === 'design') {
+        $.swipebox(designCollection);
+
+      } else if (filterState === 'art') {
+        $.swipebox(artCollection);
+
+      } else {
+        $.swipebox(allCollection);
+      }
+
+    });
+
+    /*
+      Potential hacky work around if you want the gallery to start at the selected image
+
+      $('design-a').on('click', function(){
+        $.swipebox(designACollection);
+      });
+
+      $('design-b').on('click', function(){
+          $.swipebox(designBCollection);
+      });
+    */
 
 });
