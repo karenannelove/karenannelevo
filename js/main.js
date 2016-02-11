@@ -4,6 +4,9 @@ $(document).ready(function() {
     // Initialize the Filter State
     var filterState = 'all';
 
+    // If I want the design work to be visible on page load
+    $(window).scrollTo('.work',1000,{offset:-60});
+
    	// $('.menu').localScroll({duration:800});
 
    	// Linking nav to sections for animated scrolling
