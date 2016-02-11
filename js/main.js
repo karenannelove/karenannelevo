@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 	$("[title=Services]").on('click', function(event){
 		event.preventDefault();
-		$(window).scrollTo('.services',1000,{offset:-96});
+		$(window).scrollTo('.services',1000,{offset:-60});
    	});
 
    	$("[title=Work]").on('click', function(event){
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
    	$("[title=Contact]").on('click', function(event){
 		event.preventDefault();
-		$(window).scrollTo('.contact',1000,{offset:-97});
+		$(window).scrollTo('.contact',1000,{offset:-20});
    	});
 
 // Filtering portfolio nav (art vs design)

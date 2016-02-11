@@ -108,6 +108,7 @@ body {
 		border-bottom: solid;
 		border-width: 3px;
 		border-color: #121111;
+		overflow: auto;
 	}
 
 	.about {
@@ -115,14 +116,15 @@ body {
 	}
 
 	.about > img {
-		width: 100%;
+		width: 60%;
 		display: none;
 	}
 
 	/************** SERVICES ***************/
 
 	.services {
-		padding-top: 60px;
+		padding-top: 20%;
+		padding-bottom: 20%;
 	}
 
 
@@ -167,7 +169,7 @@ body {
 			margin-right: 7%;
 	}
 
-		.second_menu li a:hover {
+	.second_menu li a:hover {
 	    color: #FFD94E;
 		}
 
@@ -180,7 +182,7 @@ body {
 	.thumbs {
 		overflow: auto;
 		padding-left: 0;
-		margin: 0;
+		margin-bottom: 100px;
 	}
 
 	.thumbs li {
@@ -207,6 +209,7 @@ body {
 
 	.contact {
 		padding-top: 60px;
+		padding-bottom:60px;
 		overflow: auto;
 		min-height: 400px;
 	}
@@ -246,6 +249,13 @@ body {
 	
 
 	/************** FOOTER ***************/
+
+	footer {
+		position: fixed;
+		bottom:0;
+		width: 100%;
+
+	}
 
 	.bar-bottom {
 		background-color: #121111;
@@ -317,6 +327,7 @@ body {
 		margin-left: 15px;
 		margin-top: 15px;
 		margin-bottom: 15px;
+		border-bottom: 0;
 	}
 
 
@@ -328,12 +339,14 @@ body {
 		margin-bottom: 10px;
 	}
 
+	.about {
+		overflow: auto;
+	}
+
 	.about > img {
 		float: right;
-		width: 35%;
-		max-width: 600px;
-		display: inline-block;
-
+		max-width: 450px;
+		display:inline-block;
 	}
 
 	.services article {
@@ -343,12 +356,13 @@ body {
 		font-size: 14px;
 	}
 
+
 }
 
 /******************* 514PX *******************/
 /*___________________________________________*/
 
-@media (min-width: 514px) {
+@media (min-width: 487px) {
 
 	.main-menu {
 			margin-top: 30px;
@@ -416,6 +430,13 @@ body {
 			font-size: 17px;
 
 		}
+
+	footer {
+		position: fixed;
+		bottom:0;
+		width: 90%;
+
+	}
 }
 
 /******************* 715PX *******************/
@@ -429,6 +450,13 @@ body {
 		}
 
 
+		.thumbs {
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+		}	
+
+
 		.thumbs li {
 			display: inline-block;
 			float: left;
@@ -439,6 +467,7 @@ body {
 		.thumbs li img {
 			width: 100%;
 			float: left;
+			
 	}
 
 	.contact_info p {
@@ -484,10 +513,12 @@ body {
 		font-size: 20px;
 	}
 
+
 	.services article {
 		font-size: 16px;
 	}
 
+	
 	.connect li img {
 		height:50px;
 		margin-bottom: 20px;
@@ -534,6 +565,13 @@ body {
 			position: fixed; 
 			width: 80%;
 	 	
+		}
+
+		footer {
+			position: fixed;
+			bottom:0;
+			width: 80%;
+
 		}
 
 }
