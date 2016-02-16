@@ -74,8 +74,7 @@ body {
 
 
 
-
-	/************** MAIN ***************/
+/************** MAIN ***************/
 
 	.content {
 		background-color: #FFF;
@@ -84,6 +83,13 @@ body {
 		font-weight: 300; 
 		color: #58595B;
 		padding: 3%;
+		min-height: 1400px;
+	}
+
+	.content .back {
+		position: fixed;
+		width: 5%;
+		margin-top: 28%;	
 	}
 
 	h1 {
@@ -173,6 +179,10 @@ body {
 	    color: #FFD94E;
 		}
 
+	.port {
+		padding-top: 5%;
+	}	
+
 	.work {
 		padding-top: 60px;
 		overflow: auto;
@@ -203,6 +213,40 @@ body {
 		display: none;
 	}
 
+
+	.work .feature .display {
+		margin-top: 2%;
+		margin-bottom: 200px;
+	}
+
+	.feature {
+		text-align: center;
+		margin-top: 5%;
+	}
+
+	.feature p {
+		display: none;
+	}
+
+	.work .feature .display {
+		width: 80%;
+		padding-top: 5%;
+		padding-left: 0;
+		list-style-type: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.work .feature .display li img{
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+		max-width: 800px;
+		display: block;
+		width: 100%;
+	}
 
 
 	/************** CONTACT ***************/
@@ -299,6 +343,17 @@ body {
 
 	}
 
+/******************* 380PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 380px) {
+
+	.content .back {
+			width: 4%;
+			margin-top: 20%;	
+	}
+}
+
 /******************* 502PX *******************/
 /*___________________________________________*/	
 
@@ -381,6 +436,22 @@ body {
 		float: left;
 	}
 
+	.content .back {
+		width: 4%;
+		margin-top: 15%;	
+	}
+
+	.feature p {
+		display: block;
+	}
+
+		.work .feature .display {
+			border-top: solid;
+			border-width: 3px;
+			border-color: #121111;
+	}
+
+
 }
 /******************* 628PX *******************/
 /*___________________________________________*/
@@ -431,6 +502,28 @@ body {
 
 		}
 
+		.work .feature .display {
+			width: 80%;
+			padding-top: 5%;
+			padding-left: 0;
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			border-top: solid;
+			border-width: 3px;
+			border-color: #121111;
+	}
+
+
+		.work .feature .display li img{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5%;
+			max-width: 800px;
+			width: 100%;
+			display: block;
+	}
+
 	footer {
 		position: fixed;
 		bottom:0;
@@ -470,27 +563,80 @@ body {
 			
 	}
 
-	.contact_info p {
-		padding-left: 50px;
+		.work .feature .display {
+			width: 80%;
+			padding-top: 5%;
+			padding-left: 0;
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			border-top: solid;
+			border-width: 3px;
+			border-color: #121111;
+	}
+
+
+		.work .feature .display li img{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5%;
+			max-width: 800px;
+			width: 100%;
+			display: block;
+	}
+
+		.contact_info p {
+			padding-left: 50px;
 
 	}
 
 
-	.contact_info{
-		float: left;
-		height: 400px;
-		width: 50%;
+		.contact_info{
+			float: left;
+			height: 400px;
+			width: 50%;
 
 	}
 
-	.contact img{
-		display: inline-block;
-		float: left;
-		width: 40%;
-		max-width: 400px;
+		.contact img{
+			display: inline-block;
+			float: left;
+			width: 40%;
+			max-width: 400px;
 
+	}
+
+		.content .back {
+			width: 4%;
+			margin-top: 13%;	
 	}
 }
+
+/******************* 800PX *******************/
+/*___________________________________________*/
+
+@media (min-width: 800px) {
+		
+		.content .back {
+			width: 4%;
+			margin-top: 11%;	
+	}
+
+}
+
+
+/******************* 910PX *******************/
+/*___________________________________________*/
+
+@media (min-width: 910px) {
+		
+		.content .back {
+			width: 4%;
+			margin-top: 9%;	
+	}
+
+}
+
 
 /******************* 1100PX *******************/
 /*___________________________________________*/	
@@ -506,7 +652,7 @@ body {
 	}
 
 	.menu li a {
-	font-size: 20px;
+		font-size: 20px;
 	}
 
 	.about p{
@@ -528,6 +674,23 @@ body {
 	.second_menu li a {
 			font-size: 25px;
 
+	}
+
+	.content .back {
+			width: 5%;
+			margin-top: 7%;	
+	}
+
+}
+
+/******************* 1225PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 1225px) {
+
+	.content .back {
+			width: 5%;
+			margin-top: 6%;	
 	}
 
 }
@@ -567,12 +730,49 @@ body {
 	 	
 		}
 
+		.content .back {
+			width: 4%;
+			margin-top: 5.4%;	
+	}
+
 		footer {
 			position: fixed;
 			bottom:0;
 			width: 80%;
 
 		}
+
+}
+
+/******************* 1800PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 1750px) {
+
+	.content .back {
+			width: 4%;
+			margin-top: 5%;	
+	}
+
+
+}
+
+/******************* 2000PX *******************/
+/*___________________________________________*/	
+
+@media (min-width: 2000px) {
+
+	.thumbs li {
+			display: inline-block;
+			float: left;
+			width: 20%;
+			margin: 0;
+	}
+
+	.content .back {
+		width: 5%;
+		margin-top: 3%;	
+	}
 
 }
 

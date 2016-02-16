@@ -5,7 +5,7 @@ $(document).ready(function() {
     var filterState = 'all';
 
     // If I want the design work to be visible on page load
-    $(window).scrollTo('.work',1000,{offset:-60});
+    //$(window).scrollTo('.work',1000,{offset:-60});
 
    	// $('.menu').localScroll({duration:800});
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		$(window).scrollTo('.about',1000,{offset:-97});
    	});
 
-	$("[title=Services]").on('click', function(event){
+	  $("[title=Services]").on('click', function(event){
 		event.preventDefault();
 		$(window).scrollTo('.services',1000,{offset:-60});
    	});
@@ -30,6 +30,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(window).scrollTo('.contact',1000,{offset:-20});
    	});
+
+
 
 // Filtering portfolio nav (art vs design)
 
