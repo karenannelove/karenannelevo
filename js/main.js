@@ -5,7 +5,7 @@ $(document).ready(function() {
     var filterState = 'all';
 
     // If I want the design work to be visible on page load
-    //$(window).scrollTo('.work',1000,{offset:-60});
+    $(window).scrollTo('.about',1000,{offset:-80});
 
    	// $('.menu').localScroll({duration:800});
 
@@ -18,12 +18,12 @@ $(document).ready(function() {
 
 	  $("[title=Services]").on('click', function(event){
 		event.preventDefault();
-		$(window).scrollTo('.services',1000,{offset:-60});
+		$(window).scrollTo('.services',1000,{offset:30});
    	});
 
    	$("[title=Work]").on('click', function(event){
 		event.preventDefault();
-		$(window).scrollTo('.work',1000,{offset:-40});
+		$(window).scrollTo('.work',1000,{offset:-10});
    	});
 
    	$("[title=Contact]").on('click', function(event){
