@@ -171,7 +171,7 @@
 	h2 {
 		font-size: 20px;
 		font-weight: 400;
-		color: #939598;
+		color: #121111;
 	}
 
 
@@ -193,6 +193,16 @@
 	.about > img {
 		width: 50%;
 		display: none;
+	}
+
+	.about p a {
+		color: #58595B;
+		text-decoration: none;
+		font-weight: 400;
+	}
+
+	.about p a:hover{
+		color: #FFD94E;
 	}
 
 
@@ -253,11 +263,11 @@
 	}
 
 	.designport {
-		padding-top: .5%;
+		padding-top: 5%;
 	}	
 
 	.artport {
-		padding-top: .10%;
+		padding-top: 10%;
 	}	
 
 	.work {
@@ -344,6 +354,10 @@
 		font-size: 20px;
 		color: #393839;
 		margin-bottom: 3%;
+	}
+
+	.designport {
+		margin-top: 5%;
 	}
 	
 
@@ -807,6 +821,9 @@
 		width: 4%;
 		margin-top: 15%;	
 	}
+
+
+
 }
 
 /******************* 800PX *******************/
@@ -878,7 +895,7 @@
 	}
 
 	.artport {
-		padding-top: 5%;
+		padding-top: 10%;
 	}
 
 	.content .back {
@@ -962,6 +979,10 @@
 
 	.contact {
 		padding-top: 10%;
+	}
+
+	.designport {
+		margin-top: 5%;
 	}
 
 }
