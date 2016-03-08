@@ -11,6 +11,7 @@
 		overflow: auto;
 	}
 
+
 /************** LOGO ***************/
 
 	.logo {
@@ -171,7 +172,6 @@
 	h2 {
 		font-size: 20px;
 		font-weight: 400;
-		color: #121111;
 	}
 
 
@@ -741,6 +741,7 @@
 	   	 	width: 70%;
 				
 	 	}
+
 
 
 }

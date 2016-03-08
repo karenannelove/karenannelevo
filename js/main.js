@@ -1,10 +1,12 @@
 
 $(document).ready(function() {
 
-    // If I want the design work to be visible on page load
+ 
+
+     // If I want the design work to be visible on page load
         // $(window).scrollTo('.work',1000,{offset:-80});
 
-   	// $('.menu').localScroll({duration:800});
+   	$('.menu').localScroll({duration:800});
 
    	// Linking nav to sections for animated scrolling
 
@@ -30,7 +32,7 @@ $(document).ready(function() {
 
     $("[title=Design]").on('click', function(event){
     event.preventDefault();
-    $(window).scrollTo('.work',1000,{offset:-40});
+    $(window).scrollTo('.work',1000,{offset:20});
     });
 
     $("[title=Art]").on('click', function(event){
