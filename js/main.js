@@ -32,12 +32,12 @@ $(document).ready(function() {
 
     $("[title=Design]").on('click', function(event){
     event.preventDefault();
-    $(window).scrollTo('.work',1000,{offset:20});
+    $(window).scrollTo('.work',1000,{offset:-20});
     });
 
     $("[title=Art]").on('click', function(event){
     event.preventDefault();
-    $(window).scrollTo('.artport',1000,{offset:-80});
+    $(window).scrollTo('.artport',1000,{offset:-30});
     });
 
 
